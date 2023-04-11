@@ -1,4 +1,6 @@
+import Form from "react-bootstrap/Form";
 import { PersonalData } from "./components/PersonalData";
+import { AddressData } from "./components/AddressData";
 
 function App() {
   return (
@@ -10,7 +12,10 @@ function App() {
           plataforma
         </p>
       </div>
-      <PersonalData />
+      <Form>
+        <PersonalData />
+        <AddressData />
+      </Form>
     </div>
   );
 }

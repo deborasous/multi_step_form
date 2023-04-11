@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 
 export const PersonalData = () => {
   return (
-    <Form className="mb-3">
+    <>
       <Form.Group>
         <Form.Label htmlFor="input-name">Nome: </Form.Label>
         <Form.Control
@@ -20,6 +20,6 @@ export const PersonalData = () => {
           placeholder="Digite o seu email"
         />
       </Form.Group>
-    </Form>
+    </>
   );
 };
