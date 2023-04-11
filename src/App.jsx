@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
-import { PersonalData } from "./components/PersonalData";
-import { AddressData } from "./components/AddressData";
+import { PersonalData } from "./pages/PersonalData";
+import { AddressData } from "./pages/AddressData";
+import { ThanksMensage } from "./components/ThanksMensage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Form>
         <PersonalData />
         <AddressData />
+        <ThanksMensage />
       </Form>
     </div>
   );
