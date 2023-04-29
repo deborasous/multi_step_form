@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-export const ThanksMensage = () => {
+export const ThanksMensage = ({ formData, setFormData }) => {
+  const medias = [
+    { id: 1, name: "Selecione" },
+    { id: 2, name: "Instagram" },
+    { id: 3, name: "Facebook" },
+    { id: 4, name: "Linkedin" },
+    { id: 5, name: "Outros" },
+  ];
+
   return (
     <div>
-      <h1>Obrigado pelo seu cadastro</h1>
       <p>Conte-nos: onde nos conheceu?</p>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Selecione</option>
-        <option value="Instagram">Instagram</option>
-        <option value="Facebook">Facebook</option>
-        <option value="Linkedin">Linkedin</option>
-        <option value="Outros">Outros</option>
+      <select
+        className="form-select"
+        aria-label="Default select example"
+        value={formData.media}
+        onChange={(e) => setFormData({ ...formData, media: e.target.value })}
+      >
+        {medias.map((item) => (
+          <option key={item.id} value={item.name}>
+            {item.name}
+          </option>
+        ))}
       </select>
     </div>
   );

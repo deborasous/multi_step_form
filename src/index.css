@@ -2,35 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  --primary-color-500: rgb(137, 79, 255);
-  --primary-color-400: hsl(260, 100%, 70%);
-  --secundary-color: rgb(255, 158, 102);
-  --gray-color-100: #f1f2f2;
-  --gray-color-200: #bcbec0;
-  --gray-color-300: #939598;
-  --gray-color-400: #6d6e71;
-  --gray: #7d7d7d;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  width: 100%;
-}
-
-#root {
-  max-width: 1300px;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
 }
